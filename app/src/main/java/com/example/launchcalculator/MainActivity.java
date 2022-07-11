@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("calc://launch"));
-                intent.putExtra("msg", "Hello");
+                intent.putExtra("msg", "HelloCalculator");
                 startActivity(Intent.createChooser(intent, null));
             }
         });
